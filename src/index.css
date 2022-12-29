@@ -1,0 +1,13 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,html{
+    font-family: PingFangSC-Light;
+    font-size: 16px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+    scroll-padding-top: 90px;
+  }
+}
