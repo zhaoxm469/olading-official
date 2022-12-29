@@ -35,8 +35,10 @@ watch(width,()=>isMenu.value=false)
 
 const handleNavClick = ({ value }) =>{
   if(value === "login") window.location.href = "http://baidu.com"
+  console.log( value,document.querySelector(`#${value}`))
   document.querySelector(`#${value}`).scrollIntoView(true)
   headerNav.active = value
+  isMenu.value = false
 }
 
 </script>
@@ -64,7 +66,7 @@ const handleNavClick = ({ value }) =>{
 
   <div class="fixed z-10 bg-white inset-0 px-14 flex flex-col pt-20" v-show="isMenu">
     <ul class="text-base cursor-pointer pt-4 divide-y-[0.5px] divide-solid divide-gray-200 flex-1">
-      <li class="py-4 text-center hover:font-bold" @click="handleNavClick" v-for="(item,index) in headerNav.list"
+      <li class="py-4 text-center hover:font-bold" @click="handleNavClick(item)" v-for="(item,index) in headerNav.list"
         :key="index" :class="{ 'font-bold':item.value==headerNav.active }">{{ item.name }}</li>
     </ul>
     <div class="flex items-center justify-center pb-80">
