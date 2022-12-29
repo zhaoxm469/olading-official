@@ -78,7 +78,7 @@ import LogoList from "./components/LogoList.vue"
     <h1 class="font-bold xl:mb-5 mb-2">免费试用</h1>
     <h2 class="font-bold xl:mb-5 mb-2">阿拉钉一体化 HR SaaS</h2>
     <h3 class="text-blue-500 xl:text-2xl text-base mb-5 font-bold">仅需一步注册，还可以邀请你的小伙伴一起使用</h3>
-    <div class="flex justify-center items-center px-[40px] mt-10 xl:mt-0">
+    <div class="flex justify-center items-center mt-10 xl:mt-0">
       <FreeTrialButton class=" sm:w-[380px] w-10/12" input />
     </div>
   </section> 

@@ -4,7 +4,10 @@ import { computed } from 'vue';
 const { input,buttonWidth,plain } = defineProps({
   input:Boolean,
   plain:Boolean,
-  buttonWidth:String
+  buttonWidth:{
+    type:String,
+    default:"140px"
+  }
 })
 const plainClass = computed(()=>{
   const base = " -ml-4 w-[140px] h-[48px] text-sm rounded-xl "

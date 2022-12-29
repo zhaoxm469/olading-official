@@ -44,7 +44,7 @@ const handleNavClick = ({ value }) =>{
 </script>
 
 <template>
-  <header class="flex shadow-sm z-20 h-[72px] items-center xl:px-[64px] px-4 sticky top-0 backdrop-blur-xl  z-10">
+  <header class="flex shadow-sm z-20 h-[72px] items-center xl:px-[64px] px-4 sticky top-0 backdrop-blur-xl">
     <h1 class="flex items-center">
       <img class="xl:w-[100px] w-20" src="https://olading.com/static/images/oladLogo.png" alt="阿拉钉" />
       <h1 class="text-lg hidden lg:block font-bold ml-8">一体化智能人财管家</h1>
